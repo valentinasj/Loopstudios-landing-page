@@ -2,6 +2,7 @@ import React from 'react'
 import { StyledHero, StyleInfo } from './StyleHero'
 import Interactive from '../../../images/desktop/image-interactive.jpg'
 
+
 export const Hero = () => {
   return (
     <StyledHero>
