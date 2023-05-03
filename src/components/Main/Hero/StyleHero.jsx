@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { device } from "../../MediaQuery/MediaQuery";
 
 
 export const StyledHero = styled.section`
@@ -16,6 +15,11 @@ export const StyledHero = styled.section`
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @media screen and (max-width: 375px){
+     
+    }
+    
     img{
         width:auto;
         height:auto;
