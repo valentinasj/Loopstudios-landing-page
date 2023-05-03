@@ -18,7 +18,7 @@ export const StyleHeader = styled.div`
     color: #fff;
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 16px;
   }
 `;
 
