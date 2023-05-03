@@ -8,7 +8,7 @@ import backgroundImage from "../../images/desktop/image-hero.jpg"
 const Header = () => {
     const links = [
         {
-          name: "Abaut",
+          name: "About",
           route: ""
         },
         {
@@ -29,7 +29,9 @@ const Header = () => {
       <StyleText>
         <p>
           IMMERSIVE
+          <br/>
           EXPERIENCES
+          <br/>
           THAT DELIVER
         </p>
       </StyleText>
