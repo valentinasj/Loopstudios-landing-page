@@ -5,6 +5,8 @@ export const StyleContainer = styled.div`
  padding: 0;
  height: 100vh;
  background-image: url("${backgroundImage}");
+ background-repeat: no-repeat;
+ background-size: cover;
 `;
 
 export const StyleHeader = styled.div`
@@ -20,6 +22,10 @@ export const StyleHeader = styled.div`
     display: flex;
     gap: 15px;
     align-items: center;
+  }
+  
+  li{
+    
   }
 `;
 
