@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 
 export const StyledHero = styled.section`
-    width: auto;
-    max-width: 1114px;
+    width: 100vw;
+    max-width: 1300px;
     height: auto;
     padding-top: 6rem;
     padding-bottom: 6rem;
