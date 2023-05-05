@@ -25,7 +25,8 @@ export const StyledFooter = styled.div`
     flex-direction: column; 
     align-items: center;
     justify-content: space-between;
-    padding: 0;}
+    padding: 0;
+    }
 `;
 
 export const StyledLogo = styled.figure`
@@ -36,7 +37,7 @@ export const StyledLogo = styled.figure`
     justify-content:center;
   img {
     padding: 53px 53px 0px;
-    width: 70%;
+    width: 80%;
   }
   } 
 `;
@@ -83,6 +84,7 @@ export const StyledList2 = styled.ul`
   flex-basis: 50%;
   justify-content: space-between;
   width: 170px;
+  
 
   li {
     list-style: none;
@@ -94,13 +96,14 @@ export const StyledList2 = styled.ul`
   }
 
   @media (max-width: 375px) {
-    padding-left: 64px;
+    padding-left: 0px;
     padding-top: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap:20px;
     height: 30px;
-    width: 150px;
+    width: 100vw;
     -webkit-box-align: baseline;
     align-items: baseline;
     margin-bottom: 30px;
@@ -143,5 +146,5 @@ export const StyledDiv1 = styled.div`
 export const StyledDiv2 = styled.div`
   display: flex;
   flex-direction: column;
- 
+  align-items:center;
 `;

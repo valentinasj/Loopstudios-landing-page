@@ -76,6 +76,7 @@ export const StyledContainerCard = styled.div`
         @media (max-width: 375px) {
        flex-direction: column;
        align-items:center;
+       margin-bottom: 180px;
            
         }`
     }

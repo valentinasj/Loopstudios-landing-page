@@ -65,7 +65,7 @@ export const Card = () => {
         </StyledTitleContent>
         <StyledContainerCard>           
           {
-            cardList.map((item, index)=> <CardItem imagen={item.routes} texto={item.name} /> )
+            cardList.map((item, index)=> <CardItem imagen={item.routes} texto={item.name} key={index}/> )
           }
         </StyledContainerCard>
       </StyledContainer>  

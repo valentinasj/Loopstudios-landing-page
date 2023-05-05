@@ -60,16 +60,24 @@ export const StyleText = styled.section`
   font-weight: 300;
   text-transform: uppercase;
   width:12.5em;
-  p{
-    font-size: 4.2rem;
-  }
   ${({ theme }) => css`
         @media (max-width: 375px) {
         position:relative;
+        width:5em;
+        padding:20px;
+        
+        }`
+    }
+  p{
+    font-size: 4.2rem;
+    ${({ theme }) => css`
+        @media (max-width: 375px) {
+        font-size: 1.5rem;
         
 
         }`
     }
+  }
 `;
 
 
