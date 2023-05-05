@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css }  from "styled-components";
 
 
 export const StyledHero = styled.section`
@@ -21,7 +21,16 @@ export const StyledHero = styled.section`
         left:-187px;
     }
     
-   
+    ${({ theme }) => css`
+        @media (max-width: 375px) {
+        display:block;
+
+        img {
+            width: 100%;
+            left: 0;
+        }
+        }`
+    }
     `
 
 export const StyleInfo = styled.div`
@@ -46,5 +55,11 @@ export const StyleInfo = styled.div`
         color:hsl(0, 0%, 55%);
         width:90%;
         text-align: justify;
+    }
+    ${({ theme }) => css`
+        @media (max-width: 375px) {
+        position: initial;
+        width: 100%;
+        }`
     }
 `

@@ -5,13 +5,14 @@ import { StyledTitleContent } from './StyleCard';
 import grid from '../../../images/desktop/image-grid.jpg';
 import arcade from '../../../images/desktop/image-night-arcade.jpg';
 import soccer from '../../../images/desktop/image-soccer-team.jpg';
- import earth from '../../../images/desktop/image-deep-earth.jpg';
+import earth from '../../../images/desktop/image-deep-earth.jpg';
 import above from '../../../images/desktop/image-from-above.jpg';
 import borealis from '../../../images/desktop/image-pocket-borealis.jpg';
 import curiosity from '../../../images/desktop/image-curiosity.jpg';
 import fisheye from '../../../images/desktop/image-fisheye.jpg';
+import {CardItem} from './CardItem/CardItem';
 
-const CardItem = [
+const cardList = [
   {
     name: "DEEP EARTH",
     routes:`${earth}`
@@ -62,23 +63,10 @@ export const Card = () => {
             <h6>OUR CREATIONS</h6>
             <button>SEE ALL</button>
         </StyledTitleContent>
-        <div>
-            <figure>
-            
-        {
-          CardItem.map((item, index)=> <img src={`${item.routes}`} alt={`${item.name}`} key={`${item.name}-${index}`}> 
-            
-          </img>)
-        }
+        <div style={{display: "flex", "flex-wrap": "wrap"}}>           
           {
-          CardItem.map((item, index)=> <span key={`${item.name}-${index}`}> 
-           { item.name}
-          </span>)
-        }
-               
-            </figure>
-
-
+            cardList.map((item, index)=> <CardItem imagen={item.routes} texto={item.name} /> )
+          }
         </div>
       </StyledContainer>  
     </>

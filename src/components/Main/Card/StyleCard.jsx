@@ -5,8 +5,6 @@ export const StyledContainer = styled.section`
     margin:2rem 2rem 6rem 2rem;
     margin-left: 12rem;
     margin-right:12rem;
-    
-    
     `
 
 export const StyledTitleContent = styled.div`
@@ -14,12 +12,13 @@ export const StyledTitleContent = styled.div`
     display:flex;
     width:auto;
     margin-bottom: 4rem;
+    
     h6{
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 300;
-        font-size: 2rem;
+        font-size: 3rem;
         color:hsl(0, 0%, 0%);
-
+        
     }
     button{
         background-color:transparent;
@@ -29,7 +28,8 @@ export const StyledTitleContent = styled.div`
         border-radius: 2px;
         font-family: 'Alata', sans-serif;
         font-weight: 200;
-        letter-spacing:5px
+        letter-spacing:5px;
+       
     }
 
 `

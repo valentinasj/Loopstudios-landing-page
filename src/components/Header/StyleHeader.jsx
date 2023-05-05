@@ -23,9 +23,7 @@ export const StyleHeader = styled.div`
     gap: 16px;
   }
   
-  li{
-    
-  }
+
 `;
 
 export const StyleText = styled.section`
@@ -37,7 +35,7 @@ export const StyleText = styled.section`
   line-height: 1;
   position: absolute;
   letter-spacing: 3px;
-  font-size: 3rem;
+  font-size: 1rem;
   font-weight: 300;
   text-transform: uppercase;
 `;
