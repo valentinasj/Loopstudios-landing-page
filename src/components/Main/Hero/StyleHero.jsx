@@ -19,6 +19,7 @@ export const StyledHero = styled.section`
         height:auto;
         position:relative;
         left:-187px;
+        
     }
     
     ${({ theme }) => css`
@@ -28,6 +29,7 @@ export const StyledHero = styled.section`
         img {
             width: 100%;
             left: 0;
+            padding:20px;
         }
         }`
     }
@@ -40,12 +42,32 @@ export const StyleInfo = styled.div`
     padding: 5rem;
     background-color: white;
     width: 650px;
+    
+    ${({ theme }) => css`
+        @media (max-width: 375px) {
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        }`
+    }
+
 
     h5{
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 300;
         font-size: 3rem;
         margin-bottom: 30px;
+        ${({ theme }) => css`
+        @media (max-width: 375px) {
+         font-size: 1.8rem;
+         text-align: center;
+         font-weight: medium;
+         
+        }`
+    }
         
     }
     p{
@@ -55,11 +77,22 @@ export const StyleInfo = styled.div`
         color:hsl(0, 0%, 55%);
         width:90%;
         text-align: justify;
+        
+    ${({ theme }) => css`
+        @media (max-width: 375px) {
+        text-align: center;
+        line-height:25px
+
+        }`
     }
+
+    }
+
     ${({ theme }) => css`
         @media (max-width: 375px) {
         position: initial;
         width: 100%;
+        
         }`
     }
 `

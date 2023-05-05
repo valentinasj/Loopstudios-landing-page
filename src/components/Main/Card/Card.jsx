@@ -1,7 +1,6 @@
 
 import React from 'react';
-import { StyledContainer } from './StyleCard';
-import { StyledTitleContent } from './StyleCard';
+import { StyledTitleContent, StyledContainerCard,  StyledContainer } from './StyleCard';
 import grid from '../../../images/desktop/image-grid.jpg';
 import arcade from '../../../images/desktop/image-night-arcade.jpg';
 import soccer from '../../../images/desktop/image-soccer-team.jpg';
@@ -11,6 +10,7 @@ import borealis from '../../../images/desktop/image-pocket-borealis.jpg';
 import curiosity from '../../../images/desktop/image-curiosity.jpg';
 import fisheye from '../../../images/desktop/image-fisheye.jpg';
 import {CardItem} from './CardItem/CardItem';
+
 
 const cardList = [
   {
@@ -63,11 +63,11 @@ export const Card = () => {
             <h6>OUR CREATIONS</h6>
             <button>SEE ALL</button>
         </StyledTitleContent>
-        <div style={{display: "flex", "flex-wrap": "wrap"}}>           
+        <StyledContainerCard>           
           {
             cardList.map((item, index)=> <CardItem imagen={item.routes} texto={item.name} /> )
           }
-        </div>
+        </StyledContainerCard>
       </StyledContainer>  
     </>
   )
