@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import backgroundImage from "../../images/desktop/image-hero.jpg";
+import backgroundImage2 from "../../images/mobile/image-hero.jpg";
 
  
 export const StyleContainer = styled.div`
@@ -11,11 +12,15 @@ export const StyleContainer = styled.div`
  background-size: cover;
  ${({ theme }) => css`
         @media (max-width: 375px) {
-          background-size: fit;
-          background-position: center;
+          background-size: cover;
+          background-position: center top;
           padding:30px;
+          background-image: url("${backgroundImage2}");
           img{
             width:170px;
+            margin-top: -50px;
+            position: absolute;
+            top: -55px;
           }
         }`
     }

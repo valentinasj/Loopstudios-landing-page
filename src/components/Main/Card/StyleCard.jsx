@@ -19,6 +19,7 @@ export const StyledTitleContent = styled.div`
     justify-content:space-between;
     display:flex;
     width:auto;
+    
     margin-bottom: 4rem;
     ${({ theme }) => css`
         @media (max-width: 375px) {
@@ -68,10 +69,25 @@ export const StyledContainerCard = styled.div`
     gap:10px;
     align-items: center;
     justify-content: space-between;
+   div{
+    position:relative; 
+    width:260px;
+   }
+
     img{
-        width:260px;
         height:auto;
+        width:100%;
     }
+
+    h1{
+        position: absolute;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        color:#fff;
+        bottom: 0;
+        width:50%;
+    }
+
     ${({ theme }) => css`
         @media (max-width: 375px) {
        flex-direction: column;
