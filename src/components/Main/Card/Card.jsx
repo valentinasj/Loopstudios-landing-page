@@ -12,6 +12,8 @@ import fisheye from '../../../images/desktop/image-fisheye.jpg';
 import {CardItem} from './CardItem/CardItem';
 
 
+
+
 const cardList = [
   {
     name: "DEEP EARTH",
@@ -53,7 +55,6 @@ const cardList = [
     routes: `${fisheye}`
   }
 ]
-
 
 export const Card = () => {
   return (
