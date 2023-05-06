@@ -17,7 +17,7 @@ export const StyledFooter = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 30px;
+  padding: 30px 12rem;
   -webkit-box-pack: justify;
   justify-content: space-between;
   @media (max-width: 375px) {
@@ -84,6 +84,9 @@ export const StyledList2 = styled.ul`
   flex-basis: 50%;
   justify-content: space-between;
   width: 170px;
+  img{
+    margin:0px 7px 0px 7px;
+  }
   
 
   li {
@@ -101,12 +104,15 @@ export const StyledList2 = styled.ul`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap:20px;
+  
     height: 30px;
     width: 100vw;
     -webkit-box-align: baseline;
     align-items: baseline;
     margin-bottom: 30px;
+    img {
+      margin:0px 10px 0px 10px;
+    }
    
     
   }
