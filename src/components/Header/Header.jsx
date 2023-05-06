@@ -1,52 +1,61 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../images/logo.svg";
-import  {StyleHeader, StyleContainer, StyleText}  from "./StyleHeader";
-import backgroundImage from "../../images/desktop/image-hero.jpg";
-
+import { StyleHeader, StyleContainer, StyleText, StyleContainerIcons } from "./StyleHeader";
+import Hamburger from "./Hamburger";
 
 
 const Header = () => {
-    const links = [
-      {
-        name: "About",
-        route: ""
-      },
-      {
-        name: "Careers",
-        route: ""
-      },
-      {
-        name: "Events",
-        route: ""
-      },
-      {
-        name: "Support",
-        routes: ""
-      }
-    ]
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
+
+  const links = [
+    {
+      name: "About",
+      route: ""
+    },
+    {
+      name: "Careers",
+      route: ""
+    },
+    {
+      name: "Events",
+      route: ""
+    },
+    {
+      name: "Support",
+      routes: ""
+    }
+  ];
+
   return (
     <StyleContainer>
       <StyleText>
         <p>
           IMMERSIVE
-          <br/>
+          <br />
           EXPERIENCES
-          <br/>
+          <br />
           THAT DELIVER
         </p>
       </StyleText>
       <StyleHeader>
-      <figure>
-        <img src= {logo}alt="logo" />
-      </figure>
-      <ul>
-        {
-          links.map((item, index)=><li key={`${item.name}-${index}`}>{item.name}</li>)
-        }
-      </ul>
-    </StyleHeader>
+        <StyleContainerIcons>
+          <figure>
+            <img src={logo} alt="logo" />
+          </figure>
+          <Hamburger open={clicked} onClick={handleClick} />
+        </StyleContainerIcons>
+        <ul className={clicked ? "active" : ""}>
+          {links.map((item, index) => (
+            <li key={`${item.name}-${index}`}>{item.name}</li>
+          ))}
+        </ul>
+      </StyleHeader>
     </StyleContainer>
   );
-}
+};
 
-export default Header
+export default Header;

@@ -21,6 +21,7 @@ export const StyleContainer = styled.div`
             margin-top: -50px;
             position: absolute;
             top: -55px;
+            z-index:2;
           }
         }`
     }
@@ -37,6 +38,7 @@ export const StyleHeader = styled.div`
         }`
     }
   ul {
+    
     font-family: 'Alata', sans-serif;
     color: #fff;
     list-style: none;
@@ -45,12 +47,45 @@ export const StyleHeader = styled.div`
     ${({ theme }) => css`
         @media (max-width: 375px) {
         display:none;
+        
         }`
     }
   }
-  
+
+  .active{
+          display:flex;
+          flex-direction: column;
+          position: absolute;
+          top:-150px;
+          left:-30px;
+          background-color:black;
+          width:100vw;
+          height:800px;
+          padding-top: 190px;
+          font-size: 1.5rem;
+          padding-left: 30px;
+          font-family: 'Josefin Sans', sans-serif;
+          font-weight: 300;
+          text-transform: uppercase;
+          line-height: 40px;
+        }
+
 
 `;
+
+export const StyleContainerIcons = styled.div`
+display:flex;
+.hamb img{
+  left: 75vw;
+  width: 2rem;
+  ${({ theme }) => css`
+        @media (min-width: 375px) {
+        display:none;
+        }`
+    }
+}
+
+`
 
 export const StyleText = styled.section`
   padding: 60px;

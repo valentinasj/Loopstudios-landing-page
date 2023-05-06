@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { StyledTitleContent, StyledContainerCard,  StyledContainer } from './StyleCard';
+import {CardItem} from './CardItem/CardItem';
 import grid from '../../../images/desktop/image-grid.jpg';
 import arcade from '../../../images/desktop/image-night-arcade.jpg';
 import soccer from '../../../images/desktop/image-soccer-team.jpg';
@@ -9,13 +10,13 @@ import above from '../../../images/desktop/image-from-above.jpg';
 import borealis from '../../../images/desktop/image-pocket-borealis.jpg';
 import curiosity from '../../../images/desktop/image-curiosity.jpg';
 import fisheye from '../../../images/desktop/image-fisheye.jpg';
-import {CardItem} from './CardItem/CardItem';
 
 
 const cardList = [
   {
     name: "DEEP EARTH",
     routes:`${earth}`
+    
   },
 
   {
