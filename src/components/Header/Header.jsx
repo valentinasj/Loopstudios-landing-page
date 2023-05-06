@@ -1,28 +1,28 @@
 import React from "react";
 import logo from "../../images/logo.svg";
 import  {StyleHeader, StyleContainer, StyleText}  from "./StyleHeader";
-import backgroundImage from "../../images/desktop/image-hero.jpg"
+import backgroundImage from "../../images/desktop/image-hero.jpg";
 
 
 
 const Header = () => {
     const links = [
-        {
-          name: "About",
-          route: ""
-        },
-        {
-          name: "Careers",
-          route: ""
-        },
-        {
-          name: "Events",
-          route: ""
-        },
-        {
-          name: "Support",
-          routes: ""
-        }
+      {
+        name: "About",
+        route: ""
+      },
+      {
+        name: "Careers",
+        route: ""
+      },
+      {
+        name: "Events",
+        route: ""
+      },
+      {
+        name: "Support",
+        routes: ""
+      }
     ]
   return (
     <StyleContainer>
