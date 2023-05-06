@@ -38,19 +38,25 @@ export const StyleHeader = styled.div`
         }`
     }
   ul {
-    
-    font-family: 'Alata', sans-serif;
-    color: #fff;
-    list-style: none;
-    display: flex;
-    gap: 16px;
-    ${({ theme }) => css`
-        @media (max-width: 375px) {
-        display:none;
-        
-        }`
+
+ font-family: 'Alata', sans-serif;
+  color: #fff;
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  ${({ theme }) => css`
+    @media (max-width: 375px) {
+      display: none;
+    }
+  `}
+  
+  li {
+    &:hover {
+      border-bottom: 0.5px solid white;
+      cursor: pointer;
     }
   }
+}
 
   .active{
           display:flex;
@@ -69,7 +75,6 @@ export const StyleHeader = styled.div`
           text-transform: uppercase;
           line-height: 40px;
         }
-
 
 `;
 

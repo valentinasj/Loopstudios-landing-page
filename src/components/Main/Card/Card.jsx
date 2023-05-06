@@ -12,6 +12,8 @@ import curiosity from '../../../images/desktop/image-curiosity.jpg';
 import fisheye from '../../../images/desktop/image-fisheye.jpg';
 
 
+
+
 const cardList = [
   {
     name: "DEEP EARTH",
@@ -54,7 +56,6 @@ const cardList = [
     routes: `${fisheye}`
   }
 ]
-
 
 export const Card = () => {
   return (
