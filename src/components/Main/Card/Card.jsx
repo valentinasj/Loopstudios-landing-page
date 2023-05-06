@@ -29,7 +29,7 @@ const cardList = [
   },
 
   {
-    name: "THEㅤㅤGRID",
+    name: "THE GRID",
     routes: `${grid}`
   },
  

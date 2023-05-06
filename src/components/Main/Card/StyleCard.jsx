@@ -85,7 +85,10 @@ export const StyledContainerCard = styled.div`
         font-weight: 300;
         color:#fff;
         bottom: 0;
-        width:50%;
+        width:100%;
+        padding: 2rem;
+        font-size: 2rem;
+        
     }
 
     ${({ theme }) => css`
