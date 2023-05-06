@@ -53,6 +53,7 @@ export const StyledTitleContent = styled.div`
         background-color: black;
         color: white;
         cursor: pointer;
+        
     }
 
     ${({ theme }) => css`

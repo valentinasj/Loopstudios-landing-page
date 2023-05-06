@@ -54,7 +54,7 @@ export const Footer = () => {
     <StyledFooter>
       <StyledDiv1>
          <StyledLogo>
-            <img src={LoopStudios}></img>
+            <img src={LoopStudios} alt="Logo"></img>
         </StyledLogo>
         <StyledList>
         {
@@ -67,7 +67,7 @@ export const Footer = () => {
          <StyledList2>
           <li>
           {
-          imgsrc.map((item, index)=><img key={`${item.name}-${index}`} src={item.source}/>)
+          imgsrc.map((item, index)=><img key={`${item.name}-${index}`} src={item.source} alt={item.name}/>)
         }
             </li>
         </StyledList2> 

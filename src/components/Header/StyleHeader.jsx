@@ -38,31 +38,37 @@ export const StyleHeader = styled.div`
         }`
     }
   ul {
-
- font-family: 'Alata', sans-serif;
-  color: #fff;
-  list-style: none;
-  display: flex;
-  gap: 16px;
-  ${({ theme }) => css`
-    @media (max-width: 375px) {
-      display: none;
+    
+    font-family: 'Alata', sans-serif;
+    color: #fff;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    
+    ${({ theme }) => css`
+        @media (max-width: 375px) {
+        display:none;
+        
+        }`
     }
-  `}
-  
-  li {
-    &:hover {
-      border-bottom: 0.5px solid white;
-      cursor: pointer;
+
+  }
+  li{
+    &:hover{
+      border-bottom:0.5px solid white;
+      width:30%; 
+      cursor:pointer;  
     }
   }
-}
 
   .active{
-          display:flex;
-          flex-direction: column;
-          position: absolute;
-          top:-150px;
+    display:none;
+    ${({ theme }) => css`
+        @media (max-width: 375px) {        
+        display:flex;
+        flex-direction: column;
+        position: absolute;
+        top:-150px;
           left:-30px;
           background-color:black;
           width:100vw;
@@ -74,7 +80,10 @@ export const StyleHeader = styled.div`
           font-weight: 300;
           text-transform: uppercase;
           line-height: 40px;
+        }`
         }
+      }
+
 
 `;
 

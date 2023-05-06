@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const colors = {
   black: 'hsl(0, 0%, 0%)',
@@ -54,11 +54,13 @@ export const StyledList = styled.ul`
     font-family: ${fonts.alata};
     font-size: 15px;
     font-weight: 400;
+    
   }
 
   li:hover {
     cursor: pointer;
     border-bottom: 1px solid white;
+ 
   }
 
   @media (max-width: 375px) {
@@ -96,6 +98,7 @@ export const StyledList2 = styled.ul`
   li:hover {
     cursor: pointer;
     border-bottom: 1px solid white;
+    
   }
 
   @media (max-width: 375px) {
@@ -130,6 +133,7 @@ export const StyledSpan = styled.span`
   span:hover {
     cursor: pointer;
     border-bottom: 1px solid white;
+    
   }
 
   @media (max-width: 375px) {
