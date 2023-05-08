@@ -103,7 +103,15 @@ export const StyledContainerCard = styled.div`
     @media (max-width: 375px) {
       flex-direction: column;
       align-items: center;
+      justify-content:start;
       margin-bottom: 180px;
+      h1{
+        font-size: larger;
+        word-break: break-word;
+        width: 166px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+      }
     }
   `}
 `;
