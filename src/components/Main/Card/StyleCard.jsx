@@ -73,7 +73,7 @@ export const StyledContainerCard = styled.div`
   justify-content: space-between;
   div {
     position: relative;
-    width: 260px;
+    width: 310px;
   }
 
   img {

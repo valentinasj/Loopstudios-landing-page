@@ -95,7 +95,7 @@ export const StyledList2 = styled.ul`
     list-style: none;
   }
 
-  li:hover {
+  img:hover {
     cursor: pointer;
     border-bottom: 1px solid white;
     
