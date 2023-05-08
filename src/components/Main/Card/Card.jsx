@@ -16,7 +16,7 @@ import arcade2 from '../../../images/mobile/image-night-arcade.jpg'
 import soccer2 from '../../../images/mobile/image-soccer-team.jpg'
 import earth2 from '../../../images/mobile/image-deep-earth.jpg'
 import above2 from '../../../images/mobile/image-from-above.jpg'
-import borealis2 from '../../../images/mobile/image-curiosity.jpg'
+import borealis2 from '../../../images/mobile/image-pocket-borealis.jpg'
 import curiosity2 from '../../../images/mobile/image-curiosity.jpg'
 import fisheye2 from '../../../images/mobile/image-fisheye.jpg'
 
